@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Avatar 2 Report</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<!-- UIkit -->
+	<link rel="stylesheet" href="js/uikit-3.15.14/css/uikit.min.css" />
+	<link rel="stylesheet" href="css/notuikit.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<script src="js/uikit-3.15.14/js/uikit.min.js"></script>
+	<script src="js/uikit-3.15.14/js/uikit-icons.min.js"></script>
+	<!-- eCharts V5 -->
+	<script src="js/echarts.min.js"></script>
+	<style media="screen">
+		#chart_1 {
+			height: 600px;
+			width: 100%;
+		}
+	</style>
+
+</head>
+
+<body style="font-family: Josefin sans; font-size: 18px; font-weight: 350;">
+
+	<!--COVER AND TITLE-->
+
+	<div class="uk-inline">
+		<img src="img/Avatar2cover.jpeg" width="100%" height="1000" alt="">
+		<div class="uk-overlay-primary uk-position-cover"></div>
+		<div class="uk-overlay uk-position-center uk-light">
+			<p style="color: white; font-size: 52px; font-weight: 500;">Avatar 2, <br> analyzed trough Twitter.</p>
+			<!--PERSONAL WEBSITE LINK-->
+			<a href="https://gianlucaandrisani.github.io">
+				<p>by <span style="text-decoration: underline; ">Gianluca Andrisani</span></p>
+			</a>
+		</div>
+	</div>
+
+	<!--INTRODUCTION & INITIAL PART-->
+
+	<div class="uk-container uk-width-3-5@m">
+		<div style="height: 60px;"></div>
+
+		<h2 style="font-family: Josefin sans;">Avatar 2, the continuing of a legacy</h2>
+		<p>
+			After "Avatar" was released in 2009, it quickly became a global success, not only for its stunning CGI
+			and technological advancement, using cutting-edge techniques like motion capture and 3D animation, that
+			make technology advance and did in fact lead the team to win the Oscar for Special Effects, but also for
+			its mythological narrative drawing inspiration from both mankind and the natural world and tackling the
+			topics of natural occupation and human oppression.
+		</p>
+		<p>
+			The first movie's sequel, "Avatar: The Way of Water," was released by James Cameron, and given the success
+			of that film, we can confidently say that the Avatar series is still on track to become a huge hit,
+			maintaining its legacy over time and generating enormous global fandom, as evidenced by its gross receipts,
+			which have already exceeded 1.7 billion dollars at the box office in just the first three weeks.
+		</p>
+
+		<h3 style="font-family: Josefin sans;">Avatar: The way of water</h3>
+
+		<p>
+			The analysis of "Avatar: The Way of Water" was chosen for this report because of its technological
+			innovation and the ground-breaking technological techniques that were used to produce it.
+			I tried to determine if it was a hot topic on Twitter and because of the global fandom that
+			the series had been able to develop, involving people from all over the world and speaking many
+			different languages. It was also relevant to determine how much interest there would be in the sequel.
+		</p>
+
+		<div style="height: 10px;"></div>
+
+		<h2 style="font-family: Josefin sans;">Twitter analysis</h2>
+
+		<p>
+			In order to understand what people were writing and saying about "Avatar: The Way of Water," I looked at
+			user behaviour through an examination of twitter.
+			Using the Google Sheets TAGS application, I went through the process of collecting data from Twitter
+			users who had included the hashtag #avatar2 in their tweets.
+		</p>
+
+		<!--PARALLAX EFFECT-->
+
+		<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background-image: url('img/tweetsimg.png'); font-family: Josefin sans;">
+			<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+				<h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;"
+					style="font-family: Josefin sans; font-size: 62px;">#avatar2</h1>
+				<p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;"
+					style="color: white; font-size: 24px;">
+					18,255 tweets collected from 31/12/22 to 8/01/23.
+				</p>
+			</div>
+		</div>
+
+		<div style="height: 80px;"></div>
+
+		<!--TWEETS/RETWEETS RATIO-->
+
+		<div class="uk-flex">
+
+			<div class="uk-card uk-card-default uk-card-body"
+				style=" width: 600px; box-shadow: none; margin-left: -40px;">
+				<p>
+					Retweets account for 70% of the entire dataset in the data collected from Twitter,
+					making it clear that most users have a tendency to rebroadcast certain popular messages.
+					Nevertheless, the sheer number of bots designed to tweet or retweet about #avatar2 has made
+					it exceedingly difficult to clear the data.
+				</p>
+			</div>
+
+			<!--RATIO PIE CHART-->
+
+			<div class="uk-card uk-card-default uk-card-body uk-margin-left"
+				style="width: 800px; height: 300px; box-shadow: none; margin-right: -40px; margin-top: -40px;">
+
+				<iframe title="Tweets/Retweets ratio" aria-label="Donut Chart" id="datawrapper-chart-o9seW"
+					src="https://datawrapper.dwcdn.net/o9seW/1/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="408" data-external="1"></iframe>
+				<script type="text/javascript">!function () {
+						"use strict"; window.addEventListener("message", (function (e) {
+							if (void 0 !== e.data
+							["datawrapper-height"]) {
+								var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" }
+							}
+						}))
+					}();
+				</script>
+
+			</div>
+
+		</div>
+
+		<div style="height: 80px;"></div>
+
+		<!--MOST ACTIVE USERS IN GENERAL-->
+
+		<div style="height: 30px;"></div>
+
+		<div class="uk-flex" style="display: flex; justify-content: flex-start;">
+
+			<!--MOST ACTIVE USERS TABLE LEFT SIDE-->
+
+			<div class="uk-card uk-card-default uk-card-body" style=" width: 500px;">
+
+				<h3 style="font-family: Josefin sans;">Most Active users</h3>
+				<iframe title="" aria-label="Table" id="datawrapper-chart-8Oq0e"
+					src="https://datawrapper.dwcdn.net/8Oq0e/1/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="411" data-external="1"></iframe>
+				<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+				</script>
+
+			</div>
+
+			<div class="uk-card uk-card-default uk-card-body uk-margin-left"
+				style="width: 500px; box-shadow: none; margin-top: 150px;">
+				<p>
+					No matter if they were tweeting or retweeting content, I initially gathered the top 10 most active
+					people in the sample to better understand general movements and remove as many bots as possible.
+					This specific data cleaning operation was not at all simple; in fact, just 33,3% of the sample of
+					the first 30 accounts turned out to be actual users.
+				</p>
+			</div>
+
+		</div>
+
+		<div style="height: 50px;"></div>
+
+		<!--TOP TWEETWERS/RETWEETERS TEXT-->
+
+		<h2 style="font-family: Josefin sans;">Top Tweeters & Retweeters</h2>
+
+
+		<p>
+			After identifying the users who were generally the most active, I determined who the top tweeters and
+			retweeters were on
+			the subject, going through a fresh data cleaning procedure for the users who weren't included in the prior
+			ranking.
+			<br><br>
+			There were a tonne of programmed bots among the top tweeters; in fact, 75% of the people in the sample were
+			bots,
+			leaving us with only 25% of actual tweeters. In the study, I mentioned the risk posed by those bots, who
+			were advertising
+			the avatar movie's free streaming version and rerouting viewers to various Reddit links that might be risky
+			to open and
+			easily trick consumers into falling for scams.
+		</p>
+
+		<p>
+			The situation with the top retweeters, however, is much different; in reality, it is more balanced. In the
+			sample,
+			50% of the users were bots who continued to retweet about risky links for the movie's free streaming.
+			However,
+			the true retweeters were those sincere and devoted fans of the story who shared just their favourite and
+			hand-picked
+			tweets regarding the film. In the case of the Retweeters, the majority of them were really interested on
+			sharing their
+			favourite fan art in their feed.
+		</p>
+
+		<div style="height: 50px;"></div>
+
+		<!--TOP TWEETERS/RETWEETERS TABLES-->
+
+		<div class="uk-flex">
+
+			<div class="uk-card uk-card-default uk-card-body" style=" width: 500px;">
+				<h3 style="font-family: Josefin sans;">Top Tweeters</h3>
+				<iframe title="" aria-label="Table" id="datawrapper-chart-5erti"
+					src="https://datawrapper.dwcdn.net/5erti/1/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="411" data-external="1">
+				</iframe>
+				<script type="text/javascript">!function () {
+						"use strict"; window.addEventListener("message", (function (e) {
+							if (void 0 !== e.data
+							["datawrapper-height"]) {
+								var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" }
+							}
+						}))
+					}();
+				</script>
+			</div>
+
+			<div class="uk-card uk-card-default uk-card-body uk-margin-left" style="width: 500px;">
+				<h3 style="font-family: Josefin sans;">Top Retweeters</h3>
+				<iframe title="" aria-label="Table" id="datawrapper-chart-3ZjC2"
+					src="https://datawrapper.dwcdn.net/3ZjC2/1/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="411" data-external="1"></iframe>
+				<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+				</script>
+
+				</script>
+
+			</div>
+
+		</div>
+
+		<div style="height: 50px;"></div>
+
+		<!--TOP TWEETS FRAMES-->
+
+		<h2 style="font-family: Josefin sans;">Top Tweets</h2>
+
+		<div class="uk-flex">
+
+			<div class="uk-card uk-card-default uk-card-body" style=" width: 500px; box-shadow: none;">
+
+				<blockquote class="twitter-tweet">
+					<p lang="en" dir="ltr">I WANNA BE SAVED iykyk 🙈 Was able to watch Avatar 1 again all I can say
+						is...Jake
+						Sully 🫡<a
+							href="https://twitter.com/hashtag/Avatar2?src=hash&amp;ref_src=twsrc%5Etfw">#Avatar2</a> <a
+							href="https://twitter.com/hashtag/AvatarTheWayOfTheWater?src=hash&amp;ref_src=twsrc%5Etfw">#AvatarTheWayOfTheWater</a>
+						<a href="https://twitter.com/hashtag/JakeSully?src=hash&amp;ref_src=twsrc%5Etfw">#JakeSully</a>
+						<a href="https://t.co/fftV8cvzDc">pic.twitter.com/fftV8cvzDc</a>
+					</p>&mdash; ⟡ Liz ⟡ (@ellizsha) <a
+						href="https://twitter.com/ellizsha/status/1609920954968469505?ref_src=twsrc%5Etfw">January 2,
+						2023</a>
+				</blockquote>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			</div>
+
+			<div class="uk-card uk-card-default uk-card-body uk-margin-left" style="width: 500px; box-shadow: none;">
+
+				<blockquote class="twitter-tweet">
+					<p lang="ko" dir="ltr"><a
+							href="https://twitter.com/hashtag/Avatar2?src=hash&amp;ref_src=twsrc%5Etfw">#Avatar2</a>
+						<br>냥글냥글 모여서 자는 애들... <a href="https://t.co/Q3lo2jjInW">pic.twitter.com/Q3lo2jjInW</a>
+					</p>
+					&mdash; 쥐 (@dirtybigrat) <a
+						href="https://twitter.com/dirtybigrat/status/1611034622862954496?ref_src=twsrc%5Etfw">January 5,
+						2023</a>
+				</blockquote>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			</div>
+
+		</div>
+
+		<p>
+			As we can see, most of the most-retweeted articles are related to fandom building and fandom itself. Users
+			share their favourite
+			fan art and posts, engage other users, and provide users with content that they truly like and are willing
+			to share with their followers.
+		</p>
+
+		<!--TOP RETWEETED POST PROFILE OWNER-->
+
+		<a href="https://twitter.com/ellizsha"><img src="img/lizprofile.png" alt
+				style="width: 500px; display: block; margin-left: auto; margin-right: auto; box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15); border-radius: 22px; margin-top: 30px; margin-bottom: 30px;"></a>
+		<p>
+			The most-retweeted post was published by illustrator and artist <a
+				href="https://twitter.com/ellizsha">@ellizsha</a>, who says she isn't as active on
+			Twitter as she is on Instagram but
+			still managed to gain 988 retweets for her artwork. She gained followers by creating fan art and interacting
+			with her audience.
+		</p>
+
+		<!--TWEETS COMING FROM TOP 10 TWEETERS/RETWEETERS-->
+
+		<h2 style="font-family: Josefin sans;">How much are the top tweeters/retweeters <br> influencing the dataset?
+		</h2>
+
+		<div class="uk-flex">
+
+			<div class="uk-card uk-card-default uk-card-body" style=" width: 500px; box-shadow: none;">
+
+				<iframe title="" aria-label="Donut Chart" id="datawrapper-chart-mQbl1"
+					src="https://datawrapper.dwcdn.net/mQbl1/2/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="373" data-external="1"></iframe>
+				<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+				</script>
+
+			</div>
+
+			<div class="uk-card uk-card-default uk-card-body uk-margin-left"
+				style="width: 500px; height: 300px; box-shadow: none;">
+
+				<iframe title="" aria-label="Donut Chart" id="datawrapper-chart-vmBpE"
+					src="https://datawrapper.dwcdn.net/vmBpE/1/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="373" data-external="1"></iframe>
+				<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+				</script>
+
+			</div>
+
+		</div>
+
+		<p>
+			Because the dataset was so large, it was less likely that the top tweeters and retweeters couldn't actually
+			affect how the data trended. Starting from the total sum of 18,255 tweets, 12,745 retweets have actually
+			been
+			gathered, of which 243 are from the top retweeters. Of the 5510 tweets, 98 come from the top tweeters.
+		</p>
+
+		<!--USERS LOCATION-->
+
+		<h2 style="font-family: Josefin sans;">Users Location</h2>
+
+		<div class="uk-flex">
+
+			<div class="uk-card uk-card-default uk-card-body"
+				style=" width: 600px; box-shadow: none; margin-left: -40px;">
+				<p>
+					In the entire dataset, the majority of users stated their location in their profiles, though rarely
+					with any specificity. Instead, they would often use snappy phrases or emojis to indicate their
+					location, sometimes including the name or flag of the country they were. <br><br>
+					However, users still want to use that text area to provide more information about themselves. In
+					fact, 81% of those profiles are marked as being located, compared to just 0.1% of those that are
+					actually geolocated. This means that almost all users declined to provide Twitter with their exact
+					location, indicating that most users are aware of the risks associated with sharing data with
+					businesses. Instead, 19% of users didn't publish their locations at all.
+				</p>
+			</div>
+
+			<div class="uk-card uk-card-default uk-card-body uk-margin-left"
+				style="width: 800px; height: 300px; box-shadow: none; margin-right: -40px; margin-top: 40px;">
+
+				<iframe title="[ Insert title here ]" aria-label="Donut Chart" id="datawrapper-chart-9WjQm"
+					src="https://datawrapper.dwcdn.net/9WjQm/1/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="408" data-external="1"></iframe>
+				<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+				</script>
+
+			</div>
+
+		</div>
+
+		<!--TEXTURAL ANALYSIS-->
+
+		<h2 style="font-family: Josefin sans;">Textural Analysis</h2>
+
+		<p>
+			After analysing each of the collected unique tweets, I performed a textural analysis to determine which
+			terms were used the most and why.
+		</p>
+
+		<div style="height: 50px;"></div>
+
+		<!--WORLD CLOUD SVG GOT FROM INSPECTING THE WEBSITE ELEMENT-->
+
+			<svg width="960" height="600">
+				<g></g>
+				<g transform="translate(480,300)scale(1,1)"><text text-anchor="middle"
+						transform="translate(69,64)rotate(-29.999999999999996)"
+						style="font-size: 88px; font-family: Impact; fill: rgb(123, 65, 115);">Time</text><text
+						text-anchor="middle" transform="translate(-89,-219)rotate(0)"
+						style="font-size: 65px; font-family: Impact; fill: rgb(123, 65, 115);">box</text><text
+						text-anchor="middle" transform="translate(-214,-100)rotate(29.999999999999996)"
+						style="font-size: 71px; font-family: Impact; fill: rgb(82, 84, 163);">WAY</text><text
+						text-anchor="middle" transform="translate(54,-91)"
+						style="font-size: 83px; font-family: Impact; fill: rgb(57, 59, 121);"></text><text
+						text-anchor="middle" transform="translate(-83,103)rotate(-60)"
+						style="font-size: 100px; font-family: Impact; fill: rgb(82, 84, 163);">Avatar</text><text
+						text-anchor="middle" transform="translate(-83,-53)rotate(-60)"
+						style="font-size: 98px; font-family: Impact; fill: rgb(107, 110, 207);">Avatar2</text><text
+						text-anchor="middle" transform="translate(129,-24)rotate(60)"
+						style="font-size: 89px; font-family: Impact; fill: rgb(156, 158, 222);">JamesCameron</text><text
+						text-anchor="middle" transform="translate(-302,29)rotate(60)"
+						style="font-size: 87px; font-family: Impact; fill: rgb(99, 121, 57);">2009</text><text
+						text-anchor="middle" transform="translate(201,-56)rotate(60)"
+						style="font-size: 87px; font-family: Impact; fill: rgb(140, 162, 82);">Frame</text><text
+						text-anchor="middle" transform="translate(-301,-143)rotate(-60)"
+						style="font-size: 87px; font-family: Impact; fill: rgb(181, 207, 107);">245854</text><text
+						text-anchor="middle" transform="translate(268,-104)rotate(60)"
+						style="font-size: 87px; font-family: Impact; fill: rgb(206, 219, 156);">025809</text><text
+						text-anchor="middle" transform="translate(-231,158)rotate(-30)"
+						style="font-size: 79px; font-family: Impact; fill: rgb(140, 109, 49);">de</text><text
+						text-anchor="middle" transform="translate(357,44)rotate(-60)"
+						style="font-size: 76px; font-family: Impact; fill: rgb(189, 158, 57);">2</text><text
+						text-anchor="middle" transform="translate(-212,-8)rotate(0)"
+						style="font-size: 72px; font-family: Impact; fill: rgb(231, 186, 82);">la</text><text
+						text-anchor="middle" transform="translate(-348,107)rotate(-60)"
+						style="font-size: 71px; font-family: Impact; fill: rgb(231, 203, 148);">movie</text><text
+						text-anchor="middle" transform="translate(146,103)rotate(-60)"
+						style="font-size: 70px; font-family: Impact; fill: rgb(132, 60, 57);">que</text><text
+						text-anchor="middle" transform="translate(-172,-165)rotate(30)"
+						style="font-size: 70px; font-family: Impact; fill: rgb(173, 73, 74);">Film</text><text
+						text-anchor="middle" transform="translate(111,-181)rotate(60)"
+						style="font-size: 69px; font-family: Impact; fill: rgb(214, 97, 107);">en</text><text
+						text-anchor="middle" transform="translate(-47,118)rotate(30)"
+						style="font-size: 65px; font-family: Impact; fill: rgb(231, 150, 156);">y</text><text
+						text-anchor="middle" transform="translate(297,134)rotate(60)"
+						style="font-size: 65px; font-family: Impact; fill: rgb(123, 65, 115);">watch</text><text
+						text-anchor="middle" transform="translate(-6,-85)rotate(0)"
+						style="font-size: 65px; font-family: Impact; fill: rgb(165, 81, 148);">le</text><text
+						text-anchor="middle" transform="translate(357,-101)rotate(60)"
+						style="font-size: 65px; font-family: Impact; fill: rgb(206, 109, 189);">James</text><text
+						text-anchor="middle" transform="translate(-26,-42)rotate(-30)"
+						style="font-size: 64px; font-family: Impact; fill: rgb(222, 158, 214);">3</text><text
+						text-anchor="middle" transform="translate(-53,178)rotate(30)"
+						style="font-size: 64px; font-family: Impact; fill: rgb(57, 59, 121);">amp</text><text
+						text-anchor="middle" transform="translate(139,-243)rotate(0)"
+						style="font-size: 64px; font-family: Impact; fill: rgb(82, 84, 163);">2022</text><text
+						text-anchor="middle" transform="translate(174,177)rotate(-30)"
+						style="font-size: 63px; font-family: Impact; fill: rgb(107, 110, 207);">3d</text><text
+						text-anchor="middle" transform="translate(21,-17)rotate(-30)"
+						style="font-size: 63px; font-family: Impact; fill: rgb(156, 158, 222);">1</text><text
+						text-anchor="middle" transform="translate(-367,-180)rotate(-60)"
+						style="font-size: 63px; font-family: Impact; fill: rgb(99, 121, 57);">now</text><text
+						text-anchor="middle" transform="translate(-87,216)rotate(-30)"
+						style="font-size: 63px; font-family: Impact; fill: rgb(140, 162, 82);">el</text><text
+						text-anchor="middle" transform="translate(274,-246)rotate(60)"
+						style="font-size: 62px; font-family: Impact; fill: rgb(181, 207, 107);">un</text><text
+						text-anchor="middle" transform="translate(-202,113)rotate(30)"
+						style="font-size: 62px; font-family: Impact; fill: rgb(206, 219, 156);">o</text><text
+						text-anchor="middle" transform="translate(362,-203)rotate(30)"
+						style="font-size: 60px; font-family: Impact; fill: rgb(140, 109, 49);">Cr</text><text
+						text-anchor="middle" transform="translate(75,97)rotate(30)"
+						style="font-size: 60px; font-family: Impact; fill: rgb(189, 158, 57);">e</text><text
+						text-anchor="middle" transform="translate(384,95)rotate(60)"
+						style="font-size: 59px; font-family: Impact; fill: rgb(231, 186, 82);">Navi</text><text
+						text-anchor="middle" transform="translate(-268,-76)rotate(60)"
+						style="font-size: 59px; font-family: Impact; fill: rgb(231, 203, 148);">et</text><text
+						text-anchor="middle" transform="translate(-280,219)rotate(30)"
+						style="font-size: 59px; font-family: Impact; fill: rgb(132, 60, 57);">les</text><text
+						text-anchor="middle" transform="translate(206,223)rotate(-30)"
+						style="font-size: 59px; font-family: Impact; fill: rgb(173, 73, 74);">🔥</text><text
+						text-anchor="middle" transform="translate(-377,-253)rotate(0)"
+						style="font-size: 57px; font-family: Impact; fill: rgb(214, 97, 107);">Loak</text><text
+						text-anchor="middle" transform="translate(-371,23)rotate(-30)"
+						style="font-size: 57px; font-family: Impact; fill: rgb(231, 150, 156);">em</text><text
+						text-anchor="middle" transform="translate(17,-139)rotate(0)"
+						style="font-size: 57px; font-family: Impact; fill: rgb(123, 65, 115);">|</text><text
+						text-anchor="middle" transform="translate(-183,-246)rotate(0)"
+						style="font-size: 56px; font-family: Impact; fill: rgb(165, 81, 148);">del</text><text
+						text-anchor="middle" transform="translate(-396,227)rotate(0)"
+						style="font-size: 56px; font-family: Impact; fill: rgb(206, 109, 189);">con</text><text
+						text-anchor="middle" transform="translate(-315,171)rotate(-30)"
+						style="font-size: 55px; font-family: Impact; fill: rgb(222, 158, 214);">W</text><text
+						text-anchor="middle" transform="translate(405,26)rotate(30)"
+						style="font-size: 55px; font-family: Impact; fill: rgb(57, 59, 121);">il</text><text
+						text-anchor="middle" transform="translate(-280,-106)rotate(0)"
+						style="font-size: 55px; font-family: Impact; fill: rgb(82, 84, 163);">à</text><text
+						text-anchor="middle" transform="translate(-279,96)rotate(-60)"
+						style="font-size: 55px; font-family: Impact; fill: rgb(107, 110, 207);">💙</text><text
+						text-anchor="middle" transform="translate(393,207)rotate(30)"
+						style="font-size: 55px; font-family: Impact; fill: rgb(156, 158, 222);">Im</text><text
+						text-anchor="middle" transform="translate(-409,81)rotate(0)"
+						style="font-size: 55px; font-family: Impact; fill: rgb(99, 121, 57);">je</text><text
+						text-anchor="middle" transform="translate(-29,-215)rotate(60)"
+						style="font-size: 55px; font-family: Impact; fill: rgb(140, 162, 82);">se</text><text
+						text-anchor="middle" transform="translate(398,-154)rotate(30)"
+						style="font-size: 54px; font-family: Impact; fill: rgb(181, 207, 107);">Su</text><text
+						text-anchor="middle" transform="translate(28,230)rotate(-60)"
+						style="font-size: 54px; font-family: Impact; fill: rgb(206, 219, 156);">eu</text><text
+						text-anchor="middle" transform="translate(-57,239)rotate(30)"
+						style="font-size: 52px; font-family: Impact; fill: rgb(140, 109, 49);">5</text><text
+						text-anchor="middle" transform="translate(-430,-104)rotate(0)"
+						style="font-size: 52px; font-family: Impact; fill: rgb(189, 158, 57);">lo</text><text
+						text-anchor="middle" transform="translate(-199,231)rotate(30)"
+						style="font-size: 52px; font-family: Impact; fill: rgb(231, 186, 82);">m</text><text
+						text-anchor="middle" transform="translate(357,84)rotate(-60)"
+						style="font-size: 51px; font-family: Impact; fill: rgb(231, 203, 148);">9</text><text
+						text-anchor="middle" transform="translate(-239,-190)rotate(0)"
+						style="font-size: 51px; font-family: Impact; fill: rgb(132, 60, 57);">4</text><text
+						text-anchor="middle" transform="translate(358,-254)rotate(-30)"
+						style="font-size: 50px; font-family: Impact; fill: rgb(173, 73, 74);">du</text><text
+						text-anchor="middle" transform="translate(324,248)rotate(0)"
+						style="font-size: 50px; font-family: Impact; fill: rgb(214, 97, 107);">😍</text><text
+						text-anchor="middle" transform="translate(186,-196)rotate(-30)"
+						style="font-size: 50px; font-family: Impact; fill: rgb(231, 150, 156);">10</text><text
+						text-anchor="middle" transform="translate(2,-8)rotate(-60)"
+						style="font-size: 50px; font-family: Impact; fill: rgb(123, 65, 115);">é</text><text
+						text-anchor="middle" transform="translate(-27,139)rotate(30)"
+						style="font-size: 48px; font-family: Impact; fill: rgb(165, 81, 148);">7</text><text
+						text-anchor="middle" transform="translate(-426,-204)rotate(0)"
+						style="font-size: 48px; font-family: Impact; fill: rgb(206, 109, 189);">🩺</text><text
+						text-anchor="middle" transform="translate(415,-109)rotate(60)"
+						style="font-size: 48px; font-family: Impact; fill: rgb(222, 158, 214);">✨</text><text
+						text-anchor="middle" transform="translate(308,-188)rotate(60)"
+						style="font-size: 48px; font-family: Impact; fill: rgb(57, 59, 121);">₹</text><text
+						text-anchor="middle" transform="translate(366,239)rotate(60)"
+						style="font-size: 47px; font-family: Impact; fill: rgb(82, 84, 163);">ça</text><text
+						text-anchor="middle" transform="translate(231,-262)rotate(0)"
+						style="font-size: 46px; font-family: Impact; fill: rgb(107, 110, 207);">mi</text></g>
+			</svg>
+
+		<p>
+			Of course, there are some terms we encounter, such Avatar and Avatar 2, and it is obvious that "<a
+				href="https://www.imdb.com/name/nm0000116/">#JamesCameron"</a>
+			was also a well-known term.
+		</p>
+		<p>
+			The director of the Avatar series, James Cameron, is currently revolutionising both the film industry and
+			the technology associated with it. In fact, he is well known for the custom cameras and rigs that he either
+			designed or had designed for himself, which were made possible through highly specialised collaboration with
+			major corporations like Sony. Pioneer of CGI, who altered its trajectory and highlighted its significance
+			when the technology was still not as advanced as it is today.
+			Exceptionally imaginative and visionary individual with the power to have an impact on both the IT and film
+			industries.
+		</p>
+
+		<!--PARAGRAPH WITH BOT POST-->
+
+		<div class="uk-flex">
+
+			<div class="uk-card uk-card-default uk-card-body"
+				style=" width: 600px; box-shadow: none; margin-left: -40px;">
+
+				<blockquote class="twitter-tweet">
+					<p lang="en" dir="ltr">Avatar (2009)<br><br>Frame 10151 of 245854<br><br>Time 00:07:21 of 02:58:09<a
+							href="https://twitter.com/hashtag/Avatar?src=hash&amp;ref_src=twsrc%5Etfw">#Avatar</a> <a
+							href="https://twitter.com/hashtag/Avatar2?src=hash&amp;ref_src=twsrc%5Etfw">#Avatar2</a> <a
+							href="https://twitter.com/hashtag/AvatarTheWayOfWater?src=hash&amp;ref_src=twsrc%5Etfw">#AvatarTheWayOfWater</a>
+						<a
+							href="https://twitter.com/hashtag/JamesCameron?src=hash&amp;ref_src=twsrc%5Etfw">#JamesCameron</a>
+						<a href="https://t.co/3QXIMOCLQG">pic.twitter.com/3QXIMOCLQG</a>
+					</p>&mdash; every avatar frame in order
+					(@AvatarInFrame) <a
+						href="https://twitter.com/AvatarInFrame/status/1610074727875223552?ref_src=twsrc%5Etfw">January
+						3,
+						2023</a>
+				</blockquote>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			</div>
+
+			<div class="uk-card uk-card-default uk-card-body uk-margin-left"
+				style="width: 600px; box-shadow: none; margin-top: 200px; margin-left: -20px;">
+
+				<p>
+					“02:58:09” and “245854”, these numbers in the word cloud might appear to be randomly appearing, but
+					they actually correspond to some specific movie moment. These numbers were generated by an automated
+					bot
+					that posts each frame from avatar movies starting from the 2009 one, a popular world on the world
+					cloud.
+					Every thirty minutes, this bot posts six movie frames, greatly influencing the textural analysis.
+				</p>
+
+			</div>
+
+		</div>
+
+		<p>
+			In addition to the praise for the filmmaker and the anticipation over the movie's box office results, it is
+			clear that the calibre of the "3D" visuals produced for the production is also valued, resulting in good
+			comments and articles.
+		</p>
+
+		<p>
+			"Box" is one of the terms that stands out. The majority of the people were commenting and sharing news about
+			the outstanding earning related to the movie and its success globally. This word is actually related to the
+			gross income of the movie through its box office.
+		</p>
+
+
+		<div style="height: 10px;"></div>
+
+
+		<!--DEMOGRAPHIC ANALYSIS-->
+
+		<h2 style="font-family: Josefin sans;">Demographic Analysis</h2>
+
+
+		<div class="uk-flex">
+
+			<div class="uk-card uk-card-default uk-card-body"
+				style=" width: 700px; box-shadow: none; margin-left: -40px;">
+
+				<p>
+					I performed a demographic analysis to learn more about the people who offered their opinions and
+					thoughts on
+					the film, as well as to identify any influencers, micro-influencers, publications, or businesses.
+				</p>
+
+				<p>
+					10,419 users made up the whole sample population; the majority of them have smaller accounts with
+					fewer than
+					1,000 followers, and some of them may even have fewer than 100 followers, indicating that they may
+					be new
+					users or automated bots.
+
+					Although there are still some individuals who have more than 1,000 followers, and the number may
+					even reach
+					10,000, this suggests that the majority of them are likely to be real users who joined the platform
+					in the
+					past.
+				</p>
+
+			</div>
+
+			<!--DEMOGRAPHIC HISTOGRAM-->
+
+			<div class="uk-card uk-card-default uk-card-body uk-margin-left"
+				style="width: 800px; box-shadow: none; margin-left: -20px; padding: none;">
+
+				<iframe title="" aria-label="Column Chart" id="datawrapper-chart-s141V"
+					src="https://datawrapper.dwcdn.net/s141V/1/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="410" data-external="1"></iframe>
+				<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+				</script>
+
+			</div>
+
+		</div>
+
+		<p>
+			When it comes to the population of accounts belonging to micro influencers that have between 10,000 and
+			100,000 followers, we can observe how the number of users rapidly drops.
+
+			Going below the 100 account, talking about some legitimate influencers with more than 100,000 followers, may
+			indicate that the franchise didn't employ influencer marketing as an advertisement method to promote the
+			film.
+
+			For accounts with more than one million followers, the number falls below fifty; the majority of these
+			accounts share pieces from international media and film magazines about the film.
+		</p>
+
+	</div>
+
+	</div>
+
+	<div style="height: 50px;"></div>
+
+	<div class="uk-container uk-width-3-5@m">
+
+		<h2 style="font-family: Josefin sans;">Time series analysis</h2>
+
+		<p>
+			The graph's time range is from December 31 to January 8 and it analyses the publication patterns of the
+			people who posted about #avatar2.
+		</p>
+		<p>
+			The chart shows that the average movement is between 50 and 150 tweets per hour, with fewer peaks occurring
+			above 150 tweets per hour, especially on the 2nd and 6th of January. The average tweet rate is 109 per hour,
+			which is also evident in the cart.
+		</p>
+
+		<div id="chart_1" class="uk-container uk uk-margin-top uk-margin-bottom"></div>
+
+		<p>
+			The most postings are made about 2 AM on January 3rd, and the most of them are about box office news,
+			with
+			people talking about and sharing information about the movie Avatar's box office performance as well as
+			updates on the many most popular movie lists showing #avatar2 at the first positions yet.
+		</p>
+
+		<!--Conclusion-->
+
+		<h2 style="font-family: Josefin sans;">Conclusion</h2>
+
+		<p>
+			An extensive amount of data from tweets and retweets on Twitter was collected as part of this investigation
+			in order to better understand how users around the world were behaving in relation to the #avatar2 topic.
+			Some pertinent observations were made, such as the topic's popularity, which led to a tendency of more than
+			100 posts per hour over the course of the entire time period.
+		</p>
+
+		<p>
+			Not just the most devoted fans wrote about the movie; there was also a lot of praise for the technological
+			sophistication used behind the scenes and the calibre of the final visuals. The movie inspired an incredible
+			wave of fandom on Twitter, tempting many users to post fan-art related to Avatar 2 or to repost their
+			favourite fandom content.
+
+			Because of the original movie's phenomenal success, there are now many expectations for the follow-up; in
+			fact, news of the movie's box office receipts generated a lot of curiosity, sparking a global word-of-mouth
+			campaign that attracted the attention of the majority of users.
+		</p>
+
+		<div style="height: 100px;"></div>
+
+		<ul style="width: 80%; display: flex; margin-left: -35px; list-style: none;">
+			<li style="margin-right: 10px; "><span style="color: black;">By</span> <a href="https://gianlucaandrisani.github.io">Gianluca Andrisani</a></li>
+			<li><a href="https://www.instagram.com/ndr.labs"><img src="img/instaicon.png" alt="" width="5%" style="margin-top: -5px;"></a></li>
+		</ul>
+
+		<!--TIMEFRAME CHART FROM eCharts-->
+
+		<script type="text/javascript">
+
+			// Initialize the echarts instance and select the element we want the chart to be drawn in. Note if we use more than one eChart in a page then we will need to use a unique name for each chart (ie, chartTwo, chart_2, option2 etc)
+			let chartOne = echarts.init(document.getElementById('chart_1'));
+
+			// configure a simple line chart
+			const optionChartOne = {
+				title: {
+					text: '',
+					left: 'center'
+				},
+				tooltip: {
+					trigger: 'axis',
+					formatter: function (info) {
+						console.log(info[0].axisValue, info[0].data);
+						return '<strong>Time: </strong>' + info[0].axisValue + '</br><strong>Count:</strong> ' + info[0].data;
+					}
+				},
+				xAxis: {
+					type: 'category',
+					data: ["31-Dec 11 AM", "31-Dec 12 PM", "31-Dec 1 PM", "31-Dec 2 PM", "31-Dec 3 PM", "31-Dec 4 PM", "31-Dec 5 PM", "31-Dec 6 PM", "31-Dec 7 PM", "31-Dec 8 PM", "31-Dec 9 PM", "31-Dec 10 PM", "31-Dec 11 PM01-Jan 12 AM", "01-Jan 1 AM", "01-Jan 2 AM", "01-Jan 3 AM", "01-Jan 4 AM", "01-Jan 5 AM", "01-Jan 6 AM", "01-Jan 7 AM", "01-Jan 8 AM", "01-Jan 9 AM", "01-Jan 10 AM", "01-Jan 11 AM", "01-Jan 12 PM", "01-Jan 1 PM", "01-Jan 2 PM", "01-Jan 3 PM", "01-Jan 4 PM", "01-Jan 5 PM", "01-Jan 6 PM", "01-Jan 7 PM", "01-Jan 8 PM", "01-Jan 9 PM", "01-Jan 10 PM", "01-Jan 11 PM", "02-Jan 12 AM", "02-Jan 1 AM", "02-Jan 2 AM", "02-Jan 3 AM", "02-Jan 4 AM", "02-Jan 5 AM", "02-Jan 6 AM", "02-Jan 7 AM", "02-Jan 8 AM", "02-Jan 9 AM", "02-Jan 10 AM", "02-Jan 11 AM", "02-Jan 12 PM", "02-Jan 1 PM", "02-Jan 2 PM", "02-Jan 3 PM", "02-Jan 4 PM", "02-Jan 5 PM", "02-Jan 6 PM", "02-Jan 7 PM", "02-Jan 8 PM", "02-Jan 9 PM", "02-Jan 10 PM", "02-Jan 11 PM", "03-Jan 12 AM", "03-Jan 1 AM", "03-Jan 2 AM", "03-Jan 3 AM", "03-Jan 4 AM", "03-Jan 5 AM", "03-Jan 6 AM", "03-Jan 7 AM", "03-Jan 8 AM", "03-Jan 9 AM", "03-Jan 10 AM", "03-Jan 11 AM", "03-Jan 12 PM", "03-Jan 1 PM", "03-Jan 2 PM", "03-Jan 3 PM", "03-Jan 4 PM", "03-Jan 5 PM", "03-Jan 6 PM", "03-Jan 7 PM", "03-Jan 8 PM", "03-Jan 9 PM", "03-Jan 10 PM", "03-Jan 11 PM", "04-Jan 12 AM", "04-Jan 1 AM", "04-Jan 2 AM", "04-Jan 3 AM", "04-Jan 4 AM", "04-Jan 5 AM", "04-Jan 6 AM", "04-Jan 7 AM", "04-Jan 8 AM", "04-Jan 9 AM", "04-Jan 10 AM", "04-Jan 11 AM", "04-Jan 12 PM", "04-Jan 1 PM", "04-Jan 2 PM", "04-Jan 3 PM", "04-Jan 4 PM", "04-Jan 5 PM", "04-Jan 6 PM", "04-Jan 7 PM", "04-Jan 8 PM", "04-Jan 9 PM", "04-Jan 10 PM", "04-Jan 11 PM", "05-Jan 12 AM", "05-Jan 1 AM", "05-Jan 2 AM", "05-Jan 3 AM", "05-Jan 4 AM", "05-Jan 5 AM", "05-Jan 6 AM", "05-Jan 7 AM", "05-Jan 8 AM", "05-Jan 9 AM", "05-Jan 10 AM", "05-Jan 11 AM", "05-Jan 12 PM", "05-Jan 1 PM", "05-Jan 2 PM", "05-Jan 3 PM", "05-Jan 4 PM", "05-Jan 5 PM", "05-Jan 6 PM", "05-Jan 7 PM", "05-Jan 8 PM", "05-Jan 9 PM", "05-Jan 10 PM", "05-Jan 11 PM", "06-Jan 12 AM", "06-Jan 1 AM", "06-Jan 2 AM", "06-Jan 3 AM", "06-Jan 4 AM", "06-Jan 5 AM", "06-Jan 6 AM", "06-Jan 7 AM", "06-Jan 8 AM", "06-Jan 9 AM", "06-Jan 10 AM", "06-Jan 11 AM", "06-Jan 12 PM", "06-Jan 1 PM", "06-Jan 2 PM", "06-Jan 3 PM", "06-Jan 4 PM", "06-Jan 5 PM", "06-Jan 6 PM", "06-Jan 7 PM", "06-Jan 8 PM", "06-Jan 9 PM", "06-Jan 10 PM", "06-Jan 11 PM", "07-Jan 12 AM", "07-Jan 1 AM", "07-Jan 2 AM", "07-Jan 3 AM", "07-Jan 4 AM", "07-Jan 5 AM", "07-Jan 6 AM", "07-Jan 7 AM", "07-Jan 8 AM", "07-Jan 9 AM", "07-Jan 10 AM", "07-Jan 11 AM", "07-Jan 12 PM", "07-Jan 1 PM", "07-Jan 2 PM", "07-Jan 3 PM", "07-Jan 4 PM", "07-Jan 5 PM", "07-Jan 6 PM", "07-Jan 7 PM", "07-Jan 8 PM", "07-Jan 9 PM", "07-Jan 10 PM", "07-Jan 11 PM", "08-Jan 12 AM", "08-Jan 1 AM", "08-Jan 2 AM", "08-Jan 3 AM", "08-Jan 4 AM", "08-Jan 5 AM", "08-Jan 6 AM", "08-Jan 7 AM", "08-Jan 8 AM", "08-Jan 9 AM", "08-Jan 10 AM", "08-Jan 11 AM", "08-Jan 12 PM", "08-Jan 1 PM", "08-Jan 2 PM", "08-Jan 3 PM", "08-Jan 4 PM", "08-Jan 5 PM", "08-Jan 6 PM"]
+					// data: [  "01-Jan 12 AM", "01-Jan 1 AM", "01-Jan 2 AM", "01-Jan 3 AM", "01-Jan 4 AM", "01-Jan 5 AM", "01-Jan 6 AM", "01-Jan 7 AM", "01-Jan 8 AM", "01-Jan 9 AM", "01-Jan 10 AM", "01-Jan 11 AM", "01-Jan 12 PM", "01-Jan 1 PM", "01-Jan 2 PM", "01-Jan 3 PM", "01-Jan 4 PM", "01-Jan 5 PM", "01-Jan 6 PM", "01-Jan 7 PM", "01-Jan 8 PM", "01-Jan 9 PM", "01-Jan 10 PM", "01-Jan 11 PM", "02-Jan 12 AM", "02-Jan 1 AM", "02-Jan 2 AM", "02-Jan 3 AM", "02-Jan 4 AM", "02-Jan 5 AM", "02-Jan 6 AM", "02-Jan 7 AM", "02-Jan 8 AM", "02-Jan 9 AM", "02-Jan 10 AM", "02-Jan 11 AM", "02-Jan 12 PM", "02-Jan 1 PM", "02-Jan 2 PM", "02-Jan 3 PM", "02-Jan 4 PM", "02-Jan 5 PM", "02-Jan 6 PM", "02-Jan 7 PM", "02-Jan 8 PM", "02-Jan 9 PM", "02-Jan 10 PM", "02-Jan 11 PM", "03-Jan 12 AM", "03-Jan 1 AM", "03-Jan 2 AM", "03-Jan 3 AM", "03-Jan 4 AM", "03-Jan 5 AM", "03-Jan 6 AM", "03-Jan 7 AM", "03-Jan 8 AM", "03-Jan 9 AM", "03-Jan 10 AM", "03-Jan 11 AM", "03-Jan 12 PM", "03-Jan 1 PM", "03-Jan 2 PM", "03-Jan 3 PM", "03-Jan 4 PM", "03-Jan 5 PM", "03-Jan 6 PM", "03-Jan 7 PM", "03-Jan 8 PM", "03-Jan 9 PM", "03-Jan 10 PM", "03-Jan 11 PM", "04-Jan 12 AM", "04-Jan 1 AM", "04-Jan 2 AM", "04-Jan 3 AM", "04-Jan 4 AM", "04-Jan 5 AM", "04-Jan 6 AM", "04-Jan 7 AM", "04-Jan 8 AM", "04-Jan 9 AM", "04-Jan 10 AM", "04-Jan 11 AM", "04-Jan 12 PM", "04-Jan 1 PM", "04-Jan 2 PM", "04-Jan 3 PM", "04-Jan 4 PM", "04-Jan 5 PM", "04-Jan 6 PM", "04-Jan 7 PM", "04-Jan 8 PM", "04-Jan 9 PM", "04-Jan 10 PM", "04-Jan 11 PM", "05-Jan 12 AM", "05-Jan 1 AM", "05-Jan 2 AM", "05-Jan 3 AM", "05-Jan 4 AM", "05-Jan 5 AM", "05-Jan 6 AM", "05-Jan 7 AM", "05-Jan 8 AM", "05-Jan 9 AM", "05-Jan 10 AM", "05-Jan 11 AM", "05-Jan 12 PM", "05-Jan 1 PM", "05-Jan 2 PM", "05-Jan 3 PM", "05-Jan 4 PM", "05-Jan 5 PM", "05-Jan 6 PM", "05-Jan 7 PM", "05-Jan 8 PM", "05-Jan 9 PM", "05-Jan 10 PM", "05-Jan 11 PM", "06-Jan 12 AM", "06-Jan 1 AM", "06-Jan 2 AM", "06-Jan 3 AM", "06-Jan 4 AM", "06-Jan 5 AM", "06-Jan 6 AM", "06-Jan 7 AM", "06-Jan 8 AM", "06-Jan 9 AM", "06-Jan 10 AM", "06-Jan 11 AM", "06-Jan 12 PM", "06-Jan 1 PM", "06-Jan 2 PM", "06-Jan 3 PM", "06-Jan 4 PM", "06-Jan 5 PM", "06-Jan 6 PM", "06-Jan 7 PM", "06-Jan 8 PM", "06-Jan 9 PM", "06-Jan 10 PM", "06-Jan 11 PM", "07-Jan 12 AM", "07-Jan 1 AM", "07-Jan 2 AM", "07-Jan 3 AM", "07-Jan 4 AM", "07-Jan 5 AM", "07-Jan 6 AM", "07-Jan 7 AM", "07-Jan 8 AM", "07-Jan 9 AM", "07-Jan 10 AM", "07-Jan 11 AM", "07-Jan 12 PM", "07-Jan 1 PM", "07-Jan 2 PM", "07-Jan 3 PM", "07-Jan 4 PM", "07-Jan 5 PM", "07-Jan 6 PM", "07-Jan 7 PM", "07-Jan 8 PM", "07-Jan 9 PM", "07-Jan 10 PM", "07-Jan 11 PM", "08-Jan 12 AM", "08-Jan 1 AM", "08-Jan 2 AM", "08-Jan 3 AM", "08-Jan 4 AM", "08-Jan 5 AM", "08-Jan 6 AM", "08-Jan 7 AM", "08-Jan 8 AM", "08-Jan 9 AM", "08-Jan 10 AM", "08-Jan 11 AM", "08-Jan 12 PM", "08-Jan 1 PM", "08-Jan 2 PM", "08-Jan 3 PM", "08-Jan 4 PM", "08-Jan 5 PM", "08-Jan 6 PM"]
+				},
+				yAxis: {
+					type: 'value'
+				},
+				series: [
+					{
+						data: ["22", "44", "48", "68", "48", "69", "53", "42", "33", "53", "54", "55", "51", "77", "57", "52", "93", "93", "95", "98", "66", "48", "67", "58", "32", "38", "79", "64", "59", "79", "75", "94", "179", "113", "84", "82", "112", "75", "83", "145", "99", "128", "108", "79", "96", "62", "60", "92", "90", "126", "129", "130", "152", "155", "123", "91", "110", "107", "111", "132", "147", "135", "282", "226", "153", "150", "148", "126", "82", "49", "59", "73", "106", "121", "124", "144", "102", "126", "111", "107", "159", "118", "99", "92", "91", "112", "90", "69", "83", "110", "85", "108", "72", "77", "68", "82", "67", "65", "67", "93", "66", "53", "81", "61", "53", "62", "54", "53", "62", "70", "67", "86", "88", "85", "95", "101", "70", "86", "54", "46", "42", "64", "59", "78", "113", "77", "77", "56", "90", "114", "191", "157", "147", "146", "177", "152", "135", "104", "74", "124", "96", "55", "73", "81", "108", "86", "88", "96", "105", "115", "75", "103", "100", "86", "89", "107", "130", "88", "73", "97", "93", "69", "97", "93", "102", "70", "62", "77", "90", "74", "71", "70", "91", "94", "120", "99", "83", "56", "89", "99", "72", "89", "96", "75", "108", "99", "21", "62", "122", "121", "128", "61", "93", "115", "125", "119", "74", "77", "49", "33"],
+						type: 'line',
+						markPoint: {
+							data: [{ type: 'max' }],
+							symbol: 'arrow',
+							symbolSize: 20,
+							symbolRotate: 90,
+							silent: true,
+							label: {
+								show: true,
+								position: 'right',
+								formatter: function (info) {
+									return 'Avatar 2 goes up at box office!';
+								}
+							}
+						}
+					}
+				]
+			};
+			// draw the chart
+			chartOne.setOption(optionChartOne);
+
+			// Responsive. Code to resize it to its container when the viewport size changes
+			window.onresize = function () {
+				chartOne.resize();
+			};
+
+		</script>
+</body>
+
+</html>
